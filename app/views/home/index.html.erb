@@ -1,0 +1,135 @@
+<header class="js--section-header">
+    <nav>
+        <div class="row">
+            <button class="logo"><%= image_tag 'logo_white.png', class: "js--scroll-to-header" %></button>
+            <ul>
+                <li><button class="js--scroll-to-social">Social Media</button></li>
+                <li><button class="js--scroll-to-timeline">Timeline</button></li>
+                <li><button class="js--scroll-to-intro">Introduction</button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form">
+    <form method="post" action="#" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-5 label">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col span-4-of-5">
+                    <input type="text" name="name" id="name" placeholder="Your name (do not fill if you wish to remain anonymous)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-5 label">
+                    <label>Message</label>
+                </div>
+                <div class="col span-4-of-5">
+                    <textarea name="message" placeholder="Your message" maxlength="200" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-5 label">
+                    <label for="type">Type of message?</label>
+                </div>
+                <div class="col span-2-of-5">
+                    <select name="type" id="type">
+                        <option value="general" selected>General enquiries</option>
+                        <option value="feedback">Feedback / Suggestion</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="col span-2-of-5">
+                    <input type="hidden" name="other-type" id="other-type" placeholder="please specify" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-5 label">
+                    <label for="find-us">Do you want a reply?</label>
+                </div>
+                <div class="col span-2-of-5">
+                    <select name="reply" id="reply">
+                        <option value="yes_tl" selected>Yes, post it into timeline</option>
+                        <option value="yes_email">Yes, send me an email</option>
+                        <option value="no">No</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="col span-2-of-5">
+                    <input type="hidden" name="other-reply" id="other-reply" placeholder="please specify (including how can I contact you)" required>
+                    <input type="hidden" name="email" id="email" placeholder="your email" required>
+                </div>
+            </div>
+            <div class="row btn">
+                <div class="col span-1-of-5">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-4-of-5">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </form>
+            <div class="row hide_container">
+                <div class="col span-1-of-5">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-4-of-5">
+                    <button class="hide js--hide">Hide</button>
+                </div>
+            </div>
+    </div>
+
+
+    <button class="message js--message">Write a message!</button>
+
+
+    <div class="name_container">
+        <!--
+        <a href="mailto:ryvanfirdy@gmail.com">Send me an email.</a>
+        -->
+        <h1 class="name js--animate-1"><span>Firdy,</span>Ryvan</h1>
+    </div>
+</header>
+<section class="intro js--section-intro">
+    <h2>Introduction</h2>
+    <div class="row">
+      <%= image_tag 'intro.jpeg'%>
+      <div class="text js--animate-2">
+            Hello there, welcome to my personal webpage! My name is Ryvan Firdy and I'm on my third year as a student at National University of Singapore, studying applied mathematics. Beside taking math modules, I took quite diverse topics, such as economics, language, coding, and business analytics. I also actively participate in a few CCAs. I was a president of Angklung Ensemble in NUS, and I still join this club. I'm also involved in PINUS (community of Indonesian student in NUS), such as being a senior in freshmen orientation, performing in NUANSA (a musical performance by PINUS), and joining PINUS' website development team. I have interned before at Bukalapak, a leading e-commerce platform in Indonesia, as a data scientist.
+        </div>
+    </div>
+</section>
+<section class="timeline js--section-timeline">
+    <h2>Timeline</h2>
+    <div class="row">
+        <p>Coming Soon! :)</p>
+    </div>
+</section>
+<section class="social-media js--section-social">
+    <div class="row">
+        <h2>Social Media Links</h2>
+        <div class="col span-1-of-3">
+            <ul>
+                <li><i class="icon ion-logo-facebook social-icon"></i></li>
+                <li><i class="icon ion-logo-instagram social-icon"></i></li>
+                <li><i class="icon ion-logo-linkedin social-icon"></i></li>
+                <li><i class="icon ion-logo-github social-icon"></i></li>
+            </ul>
+        </div>
+        <div class="col span-2-of-3 social-links">
+            <ul>
+                <li><a href="https://www.facebook.com/ryvanfirdy">facebook.com/ryvanfirdy</a></li>
+                <li><a href="https://www.instagram.com/ryvanfirdy/">@ryvanfirdy</a></li>
+                <li><a href="https://www.linkedin.com/in/ryvan-firdy/">linkedin.com/in/ryvan-firdy</a></li>
+                <li><a href="https://github.com/rvnfdy">github.com/rvnfdy</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Created and designed by Ryvan Firdy on July, 2018.</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
